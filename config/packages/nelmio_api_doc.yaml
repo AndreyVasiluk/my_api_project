@@ -1,0 +1,16 @@
+nelmio_api_doc:
+  documentation:
+    info:
+      title: "My API"
+      description: "API for processing huge datasets"
+      version: "1.0.0"
+    components:
+      securitySchemes:
+        Bearer:
+          type: http
+          scheme: bearer
+    security:
+      - Bearer: []
+  areas:
+    path_patterns:
+      - ^/process-huge-dataset
